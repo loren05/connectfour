@@ -1,4 +1,8 @@
 {
+  "engines" : {
+    "node": "10.8.0",
+    "yarn": "1.9.4"
+  },
   "name": "connectfour",
   "private": true,
   "dependencies": {
