@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Board
   ROWS = 6
   COLUMNS = 7
@@ -34,10 +32,10 @@ class Board
       columns[i].unshift EMPTY while columns[i].length < ROWS
     end
 
-    puts columns.to_s
+    # puts columns.to_s
     # Transpose to match what is shown on GUI board
     @board_state = columns.transpose
-    puts @board_state.to_s
+    # puts @board_state.to_s
   end
 
   def valid_move(move, length)
