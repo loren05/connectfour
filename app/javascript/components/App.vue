@@ -14,6 +14,13 @@
         <div class="button-container">
             <button @click="reset()">reset</button>
         </div>
+
+        <div>
+            <br/>
+            <br/>
+            <h2> Instruction</h2>
+            <p>Click one of the buttons labeled from 0-6 to drop disc.</p>
+        </div>
     </div>
 </template>
 
