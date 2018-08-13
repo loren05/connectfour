@@ -7,7 +7,7 @@
         </div>
         <div class="button-container">
             <span v-for="(enabled, column) in allowedMoves" :key="column">
-                <button @click="move(column)" :disabled="!enabled" class="game-buttons">{{ column }}</button>
+                <button @click="move(column)" :disabled="!enabled" :class="'dot-' + playerToMove">{{ column }}</button>
             </span>
         </div>
         <Board :moves="moves"/>
@@ -123,8 +123,7 @@
     }
 </script>
 
-<style scoped>
-
+<style>
     p {
         font-size: 2em;
         text-align: center;
@@ -152,7 +151,7 @@
     button {
         border: 1px solid #0066cc;
         background-color: #0099cc;
-        color: #ffffff;
+        color: black;
         padding: 5px 10px;
     }
 
@@ -176,5 +175,35 @@
 
     input[type=button]:disabled {
         background: darkorange;
+    }
+
+    .dot-0 {
+        border: 1px solid blue;
+        height: 25px;
+        width: 25px;
+        margin: 1px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .dot-1 {
+        border: 1px solid blue;
+        height: 25px;
+        width: 25px;
+        margin: 1px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .dot-2 {
+        border: 1px solid blue;
+        height: 25px;
+        width: 25px;
+        margin: 1px;
+        background-color: yellow;
+        border-radius: 50%;
+        display: inline-block;
     }
 </style>

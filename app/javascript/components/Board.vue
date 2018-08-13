@@ -48,36 +48,6 @@
 </script>
 
 <style scoped>
-    .dot-0 {
-        border: 1px solid blue;
-        height: 25px;
-        width: 25px;
-        margin: 1px;
-        background-color: white;
-        border-radius: 50%;
-        display: inline-block;
-    }
-
-    .dot-1 {
-        border: 1px solid blue;
-        height: 25px;
-        width: 25px;
-        margin: 1px;
-        background-color: red;
-        border-radius: 50%;
-        display: inline-block;
-    }
-
-    .dot-2 {
-        border: 1px solid blue;
-        height: 25px;
-        width: 25px;
-        margin: 1px;
-        background-color: yellow;
-        border-radius: 50%;
-        display: inline-block;
-    }
-
     .board-container {
         padding-top: 10px;
         height: 180px;
